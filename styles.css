@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Header Area Started */
+header {
+	height: 50px;
+	width: 100%;
+	background: teal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+/* Header Area Ended */
+
+
+/* Post Section Started */
+.section-post {
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	gap: 25px;
+	box-sizing: border-box;
+}
+.post {
+	padding: 10px;
+	border: 2px solid black;
+}
+.post:hover {
+	box-shadow: 8px 8px 0px black;
+}
+
+/* Phone Screens */
+@media (max-width: 767px) {
+	.section-post { 
+		flex-direction: column;
+	}
+
+	.post {
+		width: 100%;
+	}
+
+}
+
+/* All the screens bigger than phone screen */
+@media (min-width: 768px) {
+	.section-post { 
+		flex-direction: row;
+	}
+
+	.post {
+		width: calc(100% / 3);
+	}
+}
+
+/* Post Section Ended */
+
+/* Footer Area Started */
+footer {
+	height: 50px;
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Footer Area Ended */
